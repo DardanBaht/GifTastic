@@ -13,6 +13,8 @@ var topics = [
 
 // On the browser loading the funtion will be run in order to put all of the animals listed above into button form.
 $(document).ready(function addButtons(){
+
+  // I had to add the .empty() because the buttons would show up twice when it was not coded in. 
     $("#buttons").empty();
     for (var i = 0; i < topics.length; i++) {
        
@@ -27,7 +29,7 @@ $(document).ready(function addButtons(){
     }
 });
 
-// This is the funtion for what happens when the buttons are clicked. The gifs appearing on the page and the rating of each gif appearing above them. I needed to create a a div for where the images would go, and created a spot where the ratings would go. 
+// This is the funtion for what happens when the buttons are clicked. The gifs appearing on the page and the rating of each gif appearing above them. I needed to create a a div and img tag for where the pictures and images would go, and created a spot where the ratings would go. 
 
 $("#buttons").on("click", "#animals", function() {
     var chosen = $(this).attr("info");
@@ -65,7 +67,7 @@ $("#buttons").on("click", "#animals", function() {
 });
 
 
-// This is a function for what happens when the submit button is clicked on the 
+// This is a function for what happens when the submit button is clicked on. I need to figure out how to add the new animal that is typed to the web page. Once the animal is typed, there should be a function (onclick) when the submit button is clicked which adds a button for the new word/animal and the gifs show up. 
 
 $("submitAnimal").on("click", "#submit" ,function() {
 
