@@ -1,0 +1,12 @@
+body{
+    background-color: beige;
+}
+#buttons{
+    color: aquamarine;
+    height: 20px;
+}
+
+#addAnimal{
+
+    text-align: right;
+}
